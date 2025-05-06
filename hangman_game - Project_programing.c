@@ -91,10 +91,10 @@ void start_game() {
     }
 
     while (incorrect_tries < 5) {
-        printf("\nCurrent word: ");
+        printf(BLUE "\nCurrent word: " RESET);
         display_word(current_state);
         char guess;
-        printf("Guess a letter: ");
+        printf(YELLOW "Guess a letter: " RESET);
         scanf(" %c", &guess);
         clear_screen();
 
